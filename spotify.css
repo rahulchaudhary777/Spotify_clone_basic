@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background-color: rgb(27, 27, 27);
+}
+
+.outer{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.left{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+}
+
+.brand a{
+    transform: scale(2);
+    margin-right: 20%;
+    margin-top: 7%;
+}
+
+.brand a:hover{
+    transform: scale(2.2);
+    transition: 0.5s;
+}
+
+.brand p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.brand p:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.fav{
+    margin-left: 20%;
+}
+
+.fav p{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.fav p:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.login input{
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #1670beb1;
+    box-shadow: 0 0 4px #1670be9e;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.login button{
+    border: 2px solid #1670beb1;
+    height: 35px;
+    border-radius: 10px;
+    width: 60px;
+    cursor: pointer;
+    /* background-color: rgb(68, 68, 68); */
+}
+
+.right i{
+    margin: 0 5%;
+    transform: scale(1.3);
+    margin-top: 10px;
+}
+
+.right i:hover{
+    color: #2182d7f0;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+}
+
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #1670beb1;
+    box-shadow: 0 0 4px #1670be9e;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 670px) {
+    .left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .fav {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .right {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .login {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .login input {
+        width: 60%;
+    }
+    .login button {
+        width:30%;
+        margin-top: 10px;
+    }
+}
+
+.mainBody{
+    margin: 10px 20px;
+    display: flex;
+    height: 100vh;
+}
+
+.leftContent{
+    width: 70%;
+    overflow-y: scroll;
+}
+
+.header{
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.header img{
+    width: 335px;
+    height: 100%;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.header img:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    filter: grayscale(80%);
+    opacity: 0.6;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 3% 0 1% 1%;
+}
+
+.latestRelease{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: scroll;
+}
+
+.item1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 10px 10px 0;
+    border-radius: 10px;
+    min-width: 400px;
+    border: 5px solid rgba(255, 255, 255, 0.977);
+}
+
+.item1 img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.item1 img:hover{
+    filter: grayscale(80%);
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.item1 p{
+    margin-left: 10%;
+}
+
+.popularArtists1, .popularArtists2{
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 3%;
+}
+
+.popularArtists1 img, .popularArtists2 img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 10px 20px;
+}
+
+.popularArtists1 p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.hindiSong{
+    display: flex;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.hindiSong img{
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.hindiSong p{
+    text-align: center;
+}
+
+
+.rightContent{
+    margin-left: 20px;
+    width: 28%;
+    overflow-y: scroll;
+}
+
+.rightContent .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.rightContent .items img{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+}
